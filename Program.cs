@@ -4,20 +4,23 @@ namespace AccessModifiers
 {
     class Person
     {
+        // --- These Fields Represent a Birth Certificate ---
         private string FullName;
 
         private DateTime Birthdate;
+        //--- End Certificate ---
 
+        //---These methods help us access the information on the certificate to give to the world
         public void SetName(string name)
         {
             FullName = name;
         }
-
+        
         public string TellYouMyName()
         {
             return FullName;
         }
-
+        // --- End Helper Methods ---
         public void SetBirthdate(DateTime birthdate)
         {
             Birthdate = birthdate;
